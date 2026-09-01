@@ -8,7 +8,8 @@ public:
     string bname;
     int noc;
 
-    void input(int bookNumber) {
+    void input(int bookNumber)
+{
         cout << "enter book " << bookNumber << " id: ";
         cin >> id;
         cout << "enter book " << bookNumber << " name: ";
@@ -17,7 +18,8 @@ public:
         cin >> noc;
     }
 
-    void display(int bookNumber) {
+    void display(int bookNumber)
+    {
         cout << "\n--- Book " << bookNumber << " Details ---" << endl;
         cout << "id of the book= " << id << endl;
         cout << "name of the book= " << bname << endl;
@@ -30,16 +32,16 @@ int main()
     lab b1, b2;
 
     // Input for Book 1
-    b1.input1();
+    b1.input(1);
     
     cout << endl;
 
     // Input for Book 2
-    b2.input2();
+    b2.input(2);
 
     // Display details for both books
-    b1.display1();
-    b2.display2();
+    b1.display(1);
+    b2.display(2);
 
     return 0;
 }
