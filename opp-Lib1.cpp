@@ -25,20 +25,21 @@ public:
     }
 };
 
-int main() {
+int main() 
+{
     lab b1, b2;
 
     // Input for Book 1
-    b1.input(1);
+    b1.input1();
     
     cout << endl;
 
     // Input for Book 2
-    b2.input(2);
+    b2.input2();
 
     // Display details for both books
-    b1.display(1);
-    b2.display(2);
+    b1.display1();
+    b2.display2();
 
     return 0;
 }
